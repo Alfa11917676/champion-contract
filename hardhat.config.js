@@ -1,7 +1,6 @@
 // hardhat.config.js
 require("@nomiclabs/hardhat-ethers");
 require('@openzeppelin/hardhat-upgrades');
-const { mnemonic } = require('./secrets.json');
 require("hardhat-abi-exporter");
 require('dotenv').config()
 require("@nomiclabs/hardhat-etherscan");
@@ -37,7 +36,7 @@ module.exports = {
     mainnet : {
       url: "https://harmony-0-rpc.gateway.pokt.network",
       //rl:"https://api.harmony.one",
-      accounts: {mnemonic : mnemonic},
+
       chainId:1666600000,
     }
   },
